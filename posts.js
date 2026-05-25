@@ -123,7 +123,7 @@ const CLOUDS = [
     date: "May 8, 2026"
   },
   {
-    text: "Maybe the beauty of love is loving someone even when you can’t have them after all.",
+    text: "Maybe the beauty of love is loving someone even when you can't have them after all.",
     date: "June 24, 2025"
   },
   {
@@ -131,7 +131,7 @@ const CLOUDS = [
     date: "June 25, 2025"
   },
   {
-    text: "And somewhere in between all of this, there’s some peace not knowing some things.",
+    text: "And somewhere in between all of this, there's some peace not knowing some things.",
     date: "June 27, 2025"
   },
   {
