@@ -107,28 +107,60 @@ It's a beautiful kind of heavy.`
 
 const CLOUDS = [
   {
-    text: "Some days feel borrowed. Like I'm spending time I haven't earned yet.",
-    date: "May 20"
+    text: "For the last 6 years, how much was it me talking and how much was it ocd talking? Sometimes 10-90, sometimes 90-10.",
+    date: "Jan 28, 2026"
   },
   {
-    text: "Being understood is not the same as being known.",
-    date: "May 12"
+    text: "Maybe its because I dont believe in myself to get out of this anytime soon but atleast its nice to know the dream exists, just that its in the distance.",
+    date: "May 12, 2026"
   },
   {
-    text: "I keep rereading old conversations looking for the moment it changed.",
-    date: "May 17"
+    text: "Some people wear glasses, some wear lenses but I wear something called OCD. ",
+    date: "Jan 25, 2026"
   },
   {
-    text: "There's a certain kind of tired that sleep doesn't fix.",
-    date: "May 8"
+    text: "Can I have a new lense? where not everything is bad, contaminated, wrong.",
+    date: "May 8, 2026"
   },
   {
-    text: "I spoke too honestly and spent three days wondering if that was a mistake.",
-    date: "Apr 30"
+    text: "Maybe the beauty of love is loving someone even when you can’t have them after all.",
+    date: "June 24, 2025"
   },
   {
-    text: "The version of me before that conversation — I miss her a little.",
-    date: "Apr 22"
+    text: "I was in this, just alone. Without you in it.",
+    date: "June 25, 2025"
+  },
+  {
+    text: "And somewhere in between all of this, there’s some peace not knowing some things.",
+    date: "June 27, 2025"
+  },
+  {
+    text: "So as long as I’m here, you’ll always have someone rooting for you - just not in the front in row but somewhere in the crowd.",
+    date: "June 29, 2025"
+  },
+  {
+    text: "After all you can only fight with someone who loves you, not fight with someone to love you.",
+    date: "June 25, 2025"
+  },
+  {
+    text: "I just wish this entire thing came with a warning.",
+    date: "June 25, 2025"
+  },
+  {
+    text: "No revenge, no hate because even though you left, you left leaving me with some good memories.",
+    date: "June 25, 2025"
+  },
+  {
+    text: "All I can do now is believe that God shut this door to rescue me, to save me from further pain and to prevent my story from deviating too much from the one that’s written for me.",
+    date: "July 25, 2025"
+  },
+  {
+    text: "Finally it all came down to mastering the art of acting like it didn’t hurt and that I don’t care.",
+    date: "July 25, 2025"
+  },
+  {
+    text: "Loving someone is like handing them a loaded gun and trusting them enough to not pull the trigger.",
+    date: "July 25, 2025"
   },
 ];
 
