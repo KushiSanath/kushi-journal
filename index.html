@@ -409,7 +409,7 @@ function initClouds(){
 
     let y,tries=0;
     do{y=10+Math.random()*(SKY_H-CH-30);tries++;}
-    while(!noOverlap(y,placed,CH,MARGIN)&&tries<80);
+    while(!noOverlap(y,CH,placed,MARGIN)&&tries<80);
     placed.push({y,h:CH});
     el.style.top=y+'px';
 
