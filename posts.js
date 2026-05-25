@@ -119,7 +119,7 @@ const CLOUDS = [
     date: "Jan 25, 2026"
   },
   {
-    text: "Can I have a new lense? where not everything is bad, contaminated, wrong.",
+    text: "Can I have a new lense? where not everything is bad, contaminated, and wrong.",
     date: "May 8, 2026"
   },
   {
