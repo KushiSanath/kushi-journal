@@ -36,17 +36,37 @@
 
 const TIES = [
   {
-    title:   "The way you explained things to me",
-    date:    "May 14",
+    title:   "Fractured Girlhood",
+    date:    "May 25",
     mins:    "5",
-    excerpt: "You had a way of making the complicated feel obvious. I wonder sometimes if that was patience, or just love wearing a different coat.",
-    body: `You had a way of making the complicated feel obvious. I wonder sometimes if that was patience, or just love wearing a different coat.
+    excerpt: "I grew up spending most of my time around male friendships, partially because I saw how toxic the female friendships around me were but also mostly because I went to a male dominant school.",
+    body: `I grew up spending most of my time around male friendships, partially because I saw how toxic the female friendships around me were but also mostly because I went to a male dominant school.
 
-There were nights where I didn't understand myself, and you'd sit there, untangling my own thoughts for me like they were yours to carry. You never rushed it. Never made me feel stupid for not getting there on my own.
+But that changed at UCLA. During my first few weeks here, I met some amazing women. We instantly clicked and suddenly every day became a routine: constant calls, spontaneous plans, loud dinners, collective breakdowns and a whole lot of crazy adventures together.
 
-I think about that now, in rooms where no one explains anything. Where people talk at you instead of to you. Where clarity is a luxury and not something someone just hands you because they care.
+For the longest time, I thought I had found my permanence - these girls, this comfort and an exciting sense of belonging. I made no efforts to expand my social circle, made them my entire world. Same faces everyday, same comfort places and the same conversations over and over again. Every plan surrounded them, every update was first sent to the group chat and every small little feeling was instantly shared with each other.
 
-You made understanding feel like a gift. And I didn't know it was rare until it was gone.`
+For once, I thought to myself how beautiful it is to have female friendships - the kind I had before a random Tuesday, before an honest conversation and before everything took a turn.
+
+Suddenly all the secrets unraveled like smoke, more betrayal than loyalty, more hurt than safety, more shallow than deep, and more lies than honesty. I heard more truth from random people in dining halls than from them.
+
+Somewhere between all this, I saw the silence that created a divide, not because of hate but because of zero accountability, unaligned moral compasses and definitely different priorities.
+
+Until then, I hadn't realized that all while long I was chasing people that were all chasing something totally different. I hadn't realized how unbalanced those friendships were; texts unanswered, plans half-kept and at some point I was left with no more arms to extend and reach out. But that's on me, it's a reflection of my long standing habit of seeing red flags in pretty green and kept inviting them anyways. It felt like I was holding on for so long to just keep rewriting the ending until it was something I could live with.
+
+Whatever this is became smaller and more prominent. Suddenly I started walking into my house hearing those same voices at a distance, walking into my room listening to the calls I once used to be on and laughter I once believed was healthy.
+
+One wicket at a time, slowly each and every single one of them confirmed that my earlier perspective of female friendships was absolutely right. Suddenly, it became a group that fed into each other's blindness over truth. They protected each other like I was never in the room. To me, fierce love means nothing if you're loyal to the wrong version of things.
+
+But thank God it didn't work out, because I would have hated myself if I became a part of something that was wrong. So what didn't work out, worked out perfectly for me.
+
+But here's what no one tells you about losing people -
+
+It teaches you about yourself. How worthy you are, the need to draw boundaries, and the cost of loving loudly sometimes. I learned to choose who gets my time and how I deserve to be treated. I learned that no amount of love from outside can fill a void within, if any. And as someone who hated empty rooms, solo dinners - I found peace. In the broken, the still, the alone and in between all of it.
+
+But everything truly does happen for a reason - if that friendship lasted, the version of me in it would have given too much, would have easily been treated badly and would have given a big heart to people that never saw the worth of that love.
+
+I'm glad that version didn't make it, I like this one a lot better.`
   },
   {
     title:   "People who leave without saying why",
