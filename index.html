@@ -26,6 +26,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 
 .view{display:none}.view.active{display:block}
 
+/* HERO */
 .hero{background:var(--n800);padding:clamp(3rem,8vw,5rem) 1.5rem clamp(2.5rem,7vw,4.5rem);text-align:center;position:relative;overflow:hidden}
 .hero-orb{position:absolute;border-radius:50%;opacity:0.12;animation:orb 6s ease-in-out infinite;pointer-events:none}
 .orb1{width:clamp(180px,30vw,320px);height:clamp(180px,30vw,320px);background:var(--n400);top:-60px;left:-40px;animation-delay:0s}
@@ -34,17 +35,16 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 @keyframes orb{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
 .hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
 .hero-kicker{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--n300);font-weight:600;margin-bottom:1rem}
-
-.hero-title-block{margin-bottom:2.5rem;display:flex;flex-direction:column;align-items:center;gap:0.2rem}
+.hero-title-block{margin-bottom:clamp(3rem,6vw,4.5rem);display:flex;flex-direction:column;align-items:center;gap:0.2rem}
 .hero-line1{font-family:var(--serif);font-size:clamp(1.8rem,5.5vw,3.4rem);color:var(--white);letter-spacing:-0.02em;line-height:1.15;font-style:italic;text-align:center}
 .hero-rotate-wrap{position:relative;width:100%;max-width:540px;height:1.35em;text-align:center}
 .hero-rotate-item{position:absolute;left:0;right:0;text-align:center;color:var(--n300);font-style:italic;font-family:var(--serif);font-size:clamp(1.8rem,5.5vw,3.4rem);line-height:1.2;letter-spacing:-0.025em;opacity:0;transform:translateY(10px);transition:opacity 0.5s,transform 0.5s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 0.5rem}
 .hero-rotate-item.visible{opacity:1;transform:translateY(0)}
-
 .hero-sub{font-size:clamp(0.9rem,1.5vw,1rem);color:rgba(255,255,255,0.55);font-weight:300;max-width:440px;margin:0 auto 2rem;line-height:1.8;padding:0 1rem}
 .hero-scroll{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.4);font-weight:500;cursor:pointer;border:none;background:none;font-family:var(--sans);transition:color 0.2s;padding:0.5rem 1rem}
 .hero-scroll:hover{color:var(--n300)}
 
+/* CHAPTERS */
 .chapters{max-width:920px;margin:0 auto;padding:clamp(2.5rem,6vw,3.5rem) 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
 .chapter-card{border-radius:14px;padding:clamp(1.5rem,3vw,2rem) clamp(1.25rem,2.5vw,1.75rem) clamp(1.25rem,3vw,1.75rem);cursor:pointer;transition:all 0.22s;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .chapter-card:hover{transform:translateY(-3px)}
@@ -59,6 +59,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .ch-tag{display:inline-block;margin-top:1.1rem;padding:0.3rem 0.7rem;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;border-radius:5px;align-self:flex-start}
 .ch-arrow{position:absolute;bottom:1.5rem;right:1.75rem;font-size:1rem;opacity:0;transform:translateX(-5px);transition:all 0.2s}
 
+/* ABOUT */
 .about-section{background:var(--n50);padding:clamp(2.5rem,6vw,4rem) 1.5rem;border-top:1.5px solid var(--n100)}
 .about-inner{max-width:720px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:clamp(1.25rem,3vw,2.5rem);align-items:start}
 .about-avatar{width:clamp(60px,8vw,80px);height:clamp(60px,8vw,80px);border-radius:50%;background:var(--n700);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.5rem);color:var(--white);font-style:italic;border:3px solid var(--n400);flex-shrink:0}
@@ -66,6 +67,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .about-title{font-family:var(--serif);font-size:clamp(1.3rem,2.8vw,1.6rem);color:var(--n800);letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.2}
 .about-text{font-size:clamp(0.9rem,1.5vw,0.95rem);color:var(--n700);line-height:1.85}
 
+/* CONTACT */
 .contact-section{padding:clamp(2.5rem,6vw,3.5rem) 1.5rem;border-top:1.5px solid var(--n100)}
 .contact-inner{max-width:520px;margin:0 auto;text-align:center}
 .contact-label{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:var(--n500);margin-bottom:0.6rem}
@@ -79,6 +81,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .send-btn:hover{background:var(--n500)}
 .send-confirm{display:none;text-align:center;padding:1.25rem;color:var(--n600);font-weight:500;font-size:0.95rem}
 
+/* PAGE HEROS */
 .page-hero{background:var(--n800);padding:clamp(2rem,5vw,3rem) 1.5rem clamp(1.5rem,4vw,2.5rem)}
 .page-hero-inner{max-width:800px;margin:0 auto}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.75rem;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:600;cursor:pointer;background:none;border:none;font-family:var(--sans);margin-bottom:1.5rem;transition:color 0.15s;padding:0}
@@ -87,6 +90,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .page-tagline{font-size:clamp(0.85rem,1.5vw,0.92rem);color:rgba(255,255,255,0.5);font-weight:300;line-height:1.75;max-width:560px}
 .page-body{max-width:800px;margin:0 auto;padding:clamp(1.75rem,4vw,2.5rem) 1.5rem clamp(3rem,6vw,5rem)}
 
+/* TIES */
 .ties-post{padding:1.75rem 0;border-bottom:1.5px solid var(--n100);display:grid;grid-template-columns:auto 1fr;gap:clamp(0.75rem,2vw,1.5rem);cursor:pointer;transition:all 0.15s}
 .ties-post:hover .ties-title-text{color:var(--n500)}
 .ties-post:hover .read-more{color:var(--gold)}
@@ -96,19 +100,33 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .post-foot{display:flex;align-items:center;gap:0.5rem;margin-top:0.7rem;font-size:0.74rem;color:var(--n400);flex-wrap:wrap}
 .read-more{font-weight:600;color:var(--n500);transition:color 0.15s}
 
+/* TIES READING VIEW */
+.read-view{max-width:680px;margin:0 auto;padding:clamp(2rem,5vw,3rem) 1.5rem clamp(3rem,6vw,5rem)}
+.read-back{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.75rem;letter-spacing:0.07em;text-transform:uppercase;color:var(--n400);font-weight:600;cursor:pointer;background:none;border:none;font-family:var(--sans);margin-bottom:2rem;transition:color 0.15s;padding:0}
+.read-back:hover{color:var(--n500)}
+.read-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--n500);font-weight:600;margin-bottom:0.5rem}
+.read-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);color:var(--n800);letter-spacing:-0.03em;line-height:1.1;margin-bottom:0.75rem}
+.read-meta{display:flex;gap:0.6rem;font-size:0.78rem;color:var(--n400);margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1.5px solid var(--n100)}
+.read-body{font-size:clamp(1rem,1.8vw,1.08rem);color:var(--n800);line-height:1.85;font-weight:300}
+.read-body p{margin-bottom:1.5rem}
+
+/* CLOUDS */
 .clouds-sky{position:relative;width:100%;height:clamp(420px,55vw,500px);background:var(--white);overflow:hidden;border-top:1px solid var(--n100);border-bottom:1px solid var(--n100)}
 .sky-hint{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--n200);font-weight:500;z-index:2;pointer-events:none}
 .cloud-bubble{position:absolute;background:var(--white);border:1.5px solid var(--n200);border-radius:999px;padding:0.85rem 1.4rem;width:220px;cursor:default;transition:border-color 0.2s;z-index:1;left:0;top:0}
 .cloud-bubble:hover{border-color:var(--n400);z-index:3}
+.cloud-bubble.tapped{border-color:var(--n400);z-index:3}
 .cloud-bubble p{font-family:var(--serif);font-style:italic;font-size:0.88rem;color:var(--n800);line-height:1.55;letter-spacing:-0.01em;word-wrap:break-word}
 .cloud-bubble span{display:block;margin-top:0.45rem;font-size:0.65rem;color:var(--n300);letter-spacing:0.05em}
 
+/* LOOPS */
 .loops-list{padding:1rem 0}
 .loop{padding:1.75rem 0;border-bottom:1.5px solid var(--n100);display:flex;gap:clamp(0.85rem,2vw,1.25rem);align-items:flex-start}
 .loop-pip{width:10px;height:10px;border-radius:50%;background:var(--n500);margin-top:10px;flex-shrink:0}
 .loop-q{font-family:var(--serif);font-size:clamp(1.15rem,2.3vw,1.4rem);color:var(--n800);letter-spacing:-0.02em;line-height:1.25;font-style:italic;margin-bottom:0.5rem}
 .loop-body{font-size:0.88rem;color:var(--n600);line-height:1.75}
 
+/* MARKERS */
 .timeline{padding:1rem 0;position:relative}
 .timeline::before{content:'';position:absolute;left:13px;top:0;bottom:0;width:1.5px;background:var(--n100)}
 .tm-item{display:flex;gap:clamp(1rem,2vw,1.75rem);margin-bottom:2.25rem;align-items:flex-start}
@@ -120,7 +138,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .tm-body{font-size:0.88rem;color:var(--n600);line-height:1.75}
 .tm-when{font-size:0.7rem;color:var(--n300);letter-spacing:0.04em;margin-top:0.5rem}
 
-@media (max-width:600px){
+@media(max-width:600px){
   .nav-links a{padding:0.35rem 0.55rem;font-size:0.68rem}
   .logo{font-size:1.05rem}
   .hero-title-block{margin-bottom:2rem}
@@ -144,6 +162,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   </ul>
 </nav>
 
+<!-- HOME -->
 <div id="v-home" class="view active">
   <div class="hero">
     <div class="hero-orb orb1"></div><div class="hero-orb orb2"></div><div class="hero-orb orb3"></div>
@@ -163,30 +182,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
       <button class="hero-scroll" onclick="document.getElementById('chapters-anchor').scrollIntoView({behavior:'smooth'})">Explore the chapters ↓</button>
     </div>
   </div>
-
   <div id="chapters-anchor" class="chapters">
-    <div class="chapter-card card-1" onclick="goTo('ties')">
-      <div class="ch-num">01</div><div class="ch-title">Ties</div>
-      <p class="ch-desc">The people who shape me. Connection, attachment, distance, and everything in between. Love letters and lessons.</p>
-      <span class="ch-tag">Relationships</span><span class="ch-arrow">→</span>
-    </div>
-    <div class="chapter-card card-2" onclick="goTo('clouds')">
-      <div class="ch-num">02</div><div class="ch-title">Clouds</div>
-      <p class="ch-desc">Passing thoughts. Quiet reflections. Short, fleeting, no context, no full story. Here and gone.</p>
-      <span class="ch-tag">Fragments</span><span class="ch-arrow">→</span>
-    </div>
-    <div class="chapter-card card-3" onclick="goTo('loops')">
-      <div class="ch-num">03</div><div class="ch-title">Loops</div>
-      <p class="ch-desc">The thoughts that repeat. Uncertainty. Chaos. Fear. Always asking: what if?</p>
-      <span class="ch-tag">Recurring thoughts</span><span class="ch-arrow">→</span>
-    </div>
-    <div class="chapter-card card-4" onclick="goTo('markers')">
-      <div class="ch-num">04</div><div class="ch-title">Markers</div>
-      <p class="ch-desc">Moments that leave a trace. Endings. Beginnings. In between. Something always shifts.</p>
-      <span class="ch-tag">Turning points</span><span class="ch-arrow">→</span>
-    </div>
+    <div class="chapter-card card-1" onclick="goTo('ties')"><div class="ch-num">01</div><div class="ch-title">Ties</div><p class="ch-desc">The people who shape me. Connection, attachment, distance, and everything in between. Love letters and lessons.</p><span class="ch-tag">Relationships</span><span class="ch-arrow">→</span></div>
+    <div class="chapter-card card-2" onclick="goTo('clouds')"><div class="ch-num">02</div><div class="ch-title">Clouds</div><p class="ch-desc">Passing thoughts. Quiet reflections. Short, fleeting, no context, no full story. Here and gone.</p><span class="ch-tag">Fragments</span><span class="ch-arrow">→</span></div>
+    <div class="chapter-card card-3" onclick="goTo('loops')"><div class="ch-num">03</div><div class="ch-title">Loops</div><p class="ch-desc">The thoughts that repeat. Uncertainty. Chaos. Fear. Always asking: what if?</p><span class="ch-tag">Recurring thoughts</span><span class="ch-arrow">→</span></div>
+    <div class="chapter-card card-4" onclick="goTo('markers')"><div class="ch-num">04</div><div class="ch-title">Markers</div><p class="ch-desc">Moments that leave a trace. Endings. Beginnings. In between. Something always shifts.</p><span class="ch-tag">Turning points</span><span class="ch-arrow">→</span></div>
   </div>
-
   <div class="about-section"><div class="about-inner">
     <div class="about-avatar">K</div>
     <div>
@@ -195,7 +196,6 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
       <p class="about-text">I write randomly, whenever life gets twisty, interesting, or just plain gossip-worthy. You'll find thoughts on my personal relationships, fleeting feelings at 2am, moments I can't shake, and everything else that doesn't quite fit anywhere else. No structure, just honest writing, when I'm in the mood.</p>
     </div>
   </div></div>
-
   <div class="contact-section"><div class="contact-inner">
     <p class="contact-label">Get in touch</p>
     <h2 class="contact-title">Say something.</h2>
@@ -210,6 +210,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   </div></div>
 </div>
 
+<!-- TIES LIST -->
 <div id="v-ties" class="view">
   <div class="page-hero"><div class="page-hero-inner">
     <button class="back-btn" onclick="goTo('home')">← Back home</button>
@@ -219,6 +220,21 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   <div class="page-body" id="ties-list"></div>
 </div>
 
+<!-- TIES READING VIEW -->
+<div id="v-read" class="view">
+  <div class="page-hero"><div class="page-hero-inner">
+    <button class="back-btn" onclick="goTo('ties')">← Back to Ties</button>
+    <h1 class="page-title" id="read-title"></h1>
+    <div style="display:flex;gap:0.6rem;font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:0.5rem">
+      <span id="read-date"></span><span>·</span><span id="read-mins"></span>
+    </div>
+  </div></div>
+  <div class="read-view">
+    <div class="read-body" id="read-body"></div>
+  </div>
+</div>
+
+<!-- CLOUDS -->
 <div id="v-clouds" class="view">
   <div class="page-hero"><div class="page-hero-inner">
     <button class="back-btn" onclick="goTo('home')">← Back home</button>
@@ -227,11 +243,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   </div></div>
   <div class="page-body" style="padding-top:1.5rem;padding-bottom:3rem">
     <div class="clouds-sky" id="clouds-sky">
-      <span class="sky-hint">hover to pause a thought</span>
+      <span class="sky-hint" id="sky-hint">tap a thought to pause it</span>
     </div>
   </div>
 </div>
 
+<!-- LOOPS -->
 <div id="v-loops" class="view">
   <div class="page-hero"><div class="page-hero-inner">
     <button class="back-btn" onclick="goTo('home')">← Back home</button>
@@ -243,6 +260,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   </div>
 </div>
 
+<!-- MARKERS -->
 <div id="v-markers" class="view">
   <div class="page-hero"><div class="page-hero-inner">
     <button class="back-btn" onclick="goTo('home')">← Back home</button>
@@ -254,21 +272,22 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
   </div>
 </div>
 
-<!-- LOAD POSTS FROM posts.js -->
 <script src="posts.js"></script>
-
 <script>
-// ─── RENDER POSTS FROM posts.js ───
+// ─── HELPERS ───
+function pad(n){return String(n).padStart(2,'0')}
+function bodyToHTML(text){
+  return text.split(/\n\n+/).map(p=>'<p>'+p.trim()+'</p>').join('');
+}
+const isMobile='ontouchstart' in window || navigator.maxTouchPoints>0;
 
-// Helper: pad numbers to 2 digits
-function pad(n){ return String(n).padStart(2,'0'); }
-
-// TIES
-const tiesEl = document.getElementById('ties-list');
-TIES.forEach((p, i) => {
-  const article = document.createElement('article');
-  article.className = 'ties-post';
-  article.innerHTML = `
+// ─── RENDER TIES ───
+const tiesEl=document.getElementById('ties-list');
+TIES.forEach((p,i)=>{
+  const a=document.createElement('article');
+  a.className='ties-post';
+  a.onclick=()=>openPost(i);
+  a.innerHTML=`
     <div class="t-num">${pad(i+1)}</div>
     <div>
       <h2 class="ties-title-text">${p.title}</h2>
@@ -279,39 +298,53 @@ TIES.forEach((p, i) => {
         <span class="read-more">Read →</span>
       </div>
     </div>`;
-  tiesEl.appendChild(article);
+  tiesEl.appendChild(a);
 });
 
-// LOOPS
-const loopsEl = document.getElementById('loops-list');
-LOOPS.forEach(p => {
-  const div = document.createElement('div');
-  div.className = 'loop';
-  div.innerHTML = `
+// ─── OPEN POST READING VIEW ───
+function openPost(i){
+  const p=TIES[i];
+  document.getElementById('read-title').textContent=p.title;
+  document.getElementById('read-date').textContent=p.date;
+  document.getElementById('read-mins').textContent=p.mins+' min read';
+  document.getElementById('read-body').innerHTML=bodyToHTML(p.body);
+  showView('read');
+  // keep Ties nav active
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  document.getElementById('n-ties').classList.add('active');
+  window.scrollTo(0,0);
+}
+
+// ─── RENDER LOOPS ───
+const loopsEl=document.getElementById('loops-list');
+LOOPS.forEach(p=>{
+  const d=document.createElement('div');
+  d.className='loop';
+  d.innerHTML=`
     <div class="loop-pip"></div>
     <div>
-      <p class="loop-q">${p.question}</p>
+      <p class="loop-q">"${p.question}"</p>
       <p class="loop-body">${p.body}</p>
     </div>`;
-  loopsEl.appendChild(div);
+  loopsEl.appendChild(d);
 });
 
-// MARKERS
-const markersEl = document.getElementById('markers-list');
-MARKERS.forEach(p => {
-  const div = document.createElement('div');
-  div.className = 'tm-item';
-  div.innerHTML = `
-    <div class="tm-dot ${p.lit ? 'lit' : ''}"><div class="tm-inner"></div></div>
+// ─── RENDER MARKERS ───
+const markersEl=document.getElementById('markers-list');
+MARKERS.forEach(p=>{
+  const d=document.createElement('div');
+  d.className='tm-item';
+  d.innerHTML=`
+    <div class="tm-dot ${p.lit?'lit':''}"><div class="tm-inner"></div></div>
     <div>
       <h3 class="tm-title">${p.title}</h3>
       <p class="tm-body">${p.body}</p>
       <p class="tm-when">${p.when}</p>
     </div>`;
-  markersEl.appendChild(div);
+  markersEl.appendChild(d);
 });
 
-// ─── ROTATING HERO TEXT ───
+// ─── HERO ROTATION ───
 const total=5;let cur=0;
 setInterval(()=>{
   document.getElementById('ri-'+cur).classList.remove('visible');
@@ -319,11 +352,15 @@ setInterval(()=>{
   document.getElementById('ri-'+cur).classList.add('visible');
 },2600);
 
-// ─── PAGE NAVIGATION ───
-function goTo(p){
+// ─── NAVIGATION ───
+function showView(p){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
   document.getElementById('v-'+p).classList.add('active');
+}
+
+function goTo(p){
+  showView(p);
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
   const nl=document.getElementById('n-'+p);
   if(nl) nl.classList.add('active');
   window.scrollTo(0,0);
@@ -343,64 +380,104 @@ function handleSend(){
 // ─── CLOUDS ANIMATION ───
 let cloudsInitted=false;
 
+// Set hint text based on device
+if(!isMobile) document.getElementById('sky-hint').textContent='hover to pause a thought';
+
 function noOverlap(y,placed,ch,margin){
-  for(let p of placed){ if(Math.abs(y-p.y)<(ch+margin)) return false; }
+  for(let p of placed){if(Math.abs(y-p.y)<(ch+margin))return false;}
   return true;
 }
 
 function initClouds(){
-  if(cloudsInitted) return;
+  if(cloudsInitted)return;
   cloudsInitted=true;
   const sky=document.getElementById('clouds-sky');
   const SKY_H=sky.offsetHeight||500;
   const SKY_W=sky.offsetWidth||680;
-  const CW=Math.min(220,SKY_W-40), CH=95, MARGIN=18, SPEED_BASE=38;
+  const CW=Math.min(220,SKY_W-40),CH=95,MARGIN=18,SPEED_BASE=38;
 
   const placed=[];
   const clouds=CLOUDS.map((c,i)=>{
     const el=document.createElement('div');
     el.className='cloud-bubble';
-    el.innerHTML=`<p>${c.text}</p><span>${c.date}</span>`;
+    el.innerHTML=`<p>"${c.text}"</p><span>${c.date}</span>`;
     el.style.width=CW+'px';
     sky.appendChild(el);
 
     let y,tries=0;
-    do{ y=10+Math.random()*(SKY_H-CH-20); tries++; }
+    do{y=10+Math.random()*(SKY_H-CH-20);tries++;}
     while(!noOverlap(y,placed,CH,MARGIN)&&tries<60);
     placed.push({y});
     el.style.top=y+'px';
 
     const startX=-CW-i*(SKY_W/CLOUDS.length+30);
     const speed=SPEED_BASE+(i%3)*7;
-    return {el,x:startX,y,speed,paused:false};
+    return{el,x:startX,y,speed,paused:false};
   });
 
+  // Desktop: hover to pause
   clouds.forEach(c=>{
     c.el.addEventListener('mouseenter',()=>{c.paused=true;});
     c.el.addEventListener('mouseleave',()=>{c.paused=false;});
   });
 
+  // Mobile: tap to pause, tap again or tap elsewhere to release
+  if(isMobile){
+    let activeBubble=null;
+    clouds.forEach(c=>{
+      c.el.addEventListener('touchstart',(e)=>{
+        e.preventDefault();
+        if(activeBubble===c){
+          // tap same bubble again: unpause
+          c.paused=false;
+          c.el.classList.remove('tapped');
+          activeBubble=null;
+        } else {
+          // unpause previous
+          if(activeBubble){
+            activeBubble.paused=false;
+            activeBubble.el.classList.remove('tapped');
+          }
+          // pause this one
+          c.paused=true;
+          c.el.classList.add('tapped');
+          activeBubble=c;
+        }
+      },{passive:false});
+    });
+    // tap empty sky area to release
+    sky.addEventListener('touchstart',(e)=>{
+      if(e.target===sky || e.target.classList.contains('sky-hint')){
+        if(activeBubble){
+          activeBubble.paused=false;
+          activeBubble.el.classList.remove('tapped');
+          activeBubble=null;
+        }
+      }
+    });
+  }
+
   let last=null;
   function tick(ts){
-    if(!last) last=ts;
+    if(!last)last=ts;
     const dt=Math.min((ts-last)/1000,0.05);
     last=ts;
     clouds.forEach((c,i)=>{
-      if(c.paused) return;
+      if(c.paused)return;
       c.x+=c.speed*dt;
       if(c.x>SKY_W+20){
         c.x=-CW-20;
         const others=clouds.filter((_,j)=>j!==i).map(o=>({y:o.y}));
         let ny,tries=0;
-        do{ ny=10+Math.random()*(SKY_H-CH-20); tries++; }
+        do{ny=10+Math.random()*(SKY_H-CH-20);tries++;}
         while(!noOverlap(ny,others,CH,MARGIN)&&tries<60);
-        c.y=ny; c.el.style.top=ny+'px';
+        c.y=ny;c.el.style.top=ny+'px';
       }
       c.el.style.transform=`translateX(${Math.round(c.x)}px)`;
       const fadeW=55;
       let op=1;
-      if(c.x<-CW+fadeW) op=Math.max(0,(c.x+CW)/fadeW);
-      else if(c.x>SKY_W-fadeW) op=Math.max(0,(SKY_W+20-c.x)/fadeW);
+      if(c.x<-CW+fadeW)op=Math.max(0,(c.x+CW)/fadeW);
+      else if(c.x>SKY_W-fadeW)op=Math.max(0,(SKY_W+20-c.x)/fadeW);
       c.el.style.opacity=op;
     });
     requestAnimationFrame(tick);
