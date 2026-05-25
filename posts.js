@@ -30,6 +30,12 @@
 
 const TIES = [
   {
+    title: "Fractured Girlhood",
+    date:  "May 25",
+    mins:  "5",
+    excerpt: "I grew up spending most of my time around male friendships, partially because I saw how toxic the female friendships around me were but also mostly because I went to a male dominant school."
+  },
+  {
     title: "The way you explained things to me",
     date:  "May 14",
     mins:  "5",
@@ -46,12 +52,6 @@ const TIES = [
     date:  "Apr 10",
     mins:  "4",
     excerpt: "There's a weight to it. Being held in that much warmth. It changes how carefully you move."
-  },
-  {
-    title: "Fractured Girlhood",
-    date:  "May 25",
-    mins:  "5",
-    excerpt: "I grew up spending most of my time around male friendships, partially because I saw how toxic the female friendships around me were but also mostly because I went to a male dominant school."
   },
 ];
 
