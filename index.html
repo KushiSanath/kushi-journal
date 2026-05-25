@@ -216,11 +216,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
     <h1 class="page-title">Ties</h1>
     <p class="page-tagline">The people who shape me, through connection, attachment, distance, and everything in between. Some pieces are love letters. Others are lessons.</p>
   </div></div>
-  <div class="page-body">
-    <article class="ties-post"><div class="t-num">01</div><div><h2 class="ties-title-text">The way you explained things to me</h2><p class="ties-excerpt">You had a way of making the complicated feel obvious. I wonder sometimes if that was patience, or just love wearing a different coat.</p><div class="post-foot"><span>May 14</span><span>·</span><span>5 min</span><span>·</span><span class="read-more">Read →</span></div></div></article>
-    <article class="ties-post"><div class="t-num">02</div><div><h2 class="ties-title-text">People who leave without saying why</h2><p class="ties-excerpt">Some exits are clean. Others are a slow disappearance, messages getting shorter, calls never returned. You learn to read the space between responses.</p><div class="post-foot"><span>Apr 28</span><span>·</span><span>7 min</span><span>·</span><span class="read-more">Read →</span></div></div></article>
-    <article class="ties-post"><div class="t-num">03</div><div><h2 class="ties-title-text">On being someone's favourite person</h2><p class="ties-excerpt">There's a weight to it. Being held in that much warmth. It changes how carefully you move.</p><div class="post-foot"><span>Apr 10</span><span>·</span><span>4 min</span><span>·</span><span class="read-more">Read →</span></div></div></article>
-  </div>
+  <div class="page-body" id="ties-list"></div>
 </div>
 
 <div id="v-clouds" class="view">
@@ -243,12 +239,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
     <p class="page-tagline">The thoughts that repeat. Uncertainty. Chaos. Fear. Always, what if?</p>
   </div></div>
   <div class="page-body">
-    <div class="loops-list">
-      <div class="loop"><div class="loop-pip"></div><div><p class="loop-q">"What if I'm wrong about everything I think I know about myself?"</p><p class="loop-body">This one comes back every few months. Usually after a conversation that goes deeper than expected, or after watching someone else seem so sure of who they are.</p></div></div>
-      <div class="loop"><div class="loop-pip"></div><div><p class="loop-q">"What if I waited too long, and now it's too late?"</p><p class="loop-body">For the decision. The message. The version of my life I kept deferring. I don't always know what the thing is, just the feeling that a window is closing.</p></div></div>
-      <div class="loop"><div class="loop-pip"></div><div><p class="loop-q">"What if they remember me differently than I remember myself?"</p><p class="loop-body">The gap between who we are and who we seem is unsettling. I go back over things I said and try to see them from the outside.</p></div></div>
-      <div class="loop"><div class="loop-pip"></div><div><p class="loop-q">"What if nothing I'm afraid of actually matters?"</p><p class="loop-body">This one is less anxiety and more exhaustion. What if all this weight I've been carrying is just optional?</p></div></div>
-    </div>
+    <div class="loops-list" id="loops-list"></div>
   </div>
 </div>
 
@@ -259,16 +250,68 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
     <p class="page-tagline">The moments that leave a trace. Endings. Beginnings. In between. Something shifts.</p>
   </div></div>
   <div class="page-body">
-    <div class="timeline">
-      <div class="tm-item"><div class="tm-dot lit"><div class="tm-inner"></div></div><div><h3 class="tm-title">The day I stopped pretending I was fine</h3><p class="tm-body">It wasn't dramatic. No one noticed. But something in me decided, quietly, not to perform it anymore. That small choice rearranged a lot.</p><p class="tm-when">May 2026 · Turning point</p></div></div>
-      <div class="tm-item"><div class="tm-dot"><div class="tm-inner"></div></div><div><h3 class="tm-title">A goodbye I didn't know was a goodbye</h3><p class="tm-body">I only understood it months later, looking back. There was nothing special about the moment while it happened. That's the thing about endings, they don't announce themselves.</p><p class="tm-when">Feb 2026 · Ending</p></div></div>
-      <div class="tm-item"><div class="tm-dot"><div class="tm-inner"></div></div><div><h3 class="tm-title">The first time I chose myself without apologising</h3><p class="tm-body">Small act. Big interior shift. I kept waiting for the guilt to arrive and it didn't, not all of it, anyway.</p><p class="tm-when">Nov 2025 · Beginning</p></div></div>
-      <div class="tm-item"><div class="tm-dot"><div class="tm-inner"></div></div><div><h3 class="tm-title">The conversation that divided time into before and after</h3><p class="tm-body">Some things, once said, change the shape of everything around them. I still think about the exact words. How ordinary they seemed at first.</p><p class="tm-when">Aug 2025 · In between</p></div></div>
-    </div>
+    <div class="timeline" id="markers-list"></div>
   </div>
 </div>
 
+<!-- LOAD POSTS FROM posts.js -->
+<script src="posts.js"></script>
+
 <script>
+// ─── RENDER POSTS FROM posts.js ───
+
+// Helper: pad numbers to 2 digits
+function pad(n){ return String(n).padStart(2,'0'); }
+
+// TIES
+const tiesEl = document.getElementById('ties-list');
+TIES.forEach((p, i) => {
+  const article = document.createElement('article');
+  article.className = 'ties-post';
+  article.innerHTML = `
+    <div class="t-num">${pad(i+1)}</div>
+    <div>
+      <h2 class="ties-title-text">${p.title}</h2>
+      <p class="ties-excerpt">${p.excerpt}</p>
+      <div class="post-foot">
+        <span>${p.date}</span><span>·</span>
+        <span>${p.mins} min</span><span>·</span>
+        <span class="read-more">Read →</span>
+      </div>
+    </div>`;
+  tiesEl.appendChild(article);
+});
+
+// LOOPS
+const loopsEl = document.getElementById('loops-list');
+LOOPS.forEach(p => {
+  const div = document.createElement('div');
+  div.className = 'loop';
+  div.innerHTML = `
+    <div class="loop-pip"></div>
+    <div>
+      <p class="loop-q">${p.question}</p>
+      <p class="loop-body">${p.body}</p>
+    </div>`;
+  loopsEl.appendChild(div);
+});
+
+// MARKERS
+const markersEl = document.getElementById('markers-list');
+MARKERS.forEach(p => {
+  const div = document.createElement('div');
+  div.className = 'tm-item';
+  div.innerHTML = `
+    <div class="tm-dot ${p.lit ? 'lit' : ''}"><div class="tm-inner"></div></div>
+    <div>
+      <h3 class="tm-title">${p.title}</h3>
+      <p class="tm-body">${p.body}</p>
+      <p class="tm-when">${p.when}</p>
+    </div>`;
+  markersEl.appendChild(div);
+});
+
+// ─── ROTATING HERO TEXT ───
 const total=5;let cur=0;
 setInterval(()=>{
   document.getElementById('ri-'+cur).classList.remove('visible');
@@ -276,6 +319,7 @@ setInterval(()=>{
   document.getElementById('ri-'+cur).classList.add('visible');
 },2600);
 
+// ─── PAGE NAVIGATION ───
 function goTo(p){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
@@ -296,15 +340,7 @@ function handleSend(){
   c.textContent='Got it, '+n+' — thanks for reaching out ✦';
 }
 
-const cloudTexts=[
-  {text:'"Some days feel borrowed. Like I\'m spending time I haven\'t earned yet."',date:'May 20'},
-  {text:'"Being understood is not the same as being known."',date:'May 12'},
-  {text:'"I keep rereading old conversations looking for the moment it changed."',date:'May 17'},
-  {text:'"There\'s a certain kind of tired that sleep doesn\'t fix."',date:'May 8'},
-  {text:'"I spoke too honestly and spent three days wondering if that was a mistake."',date:'Apr 30'},
-  {text:'"The version of me before that conversation — I miss her a little."',date:'Apr 22'},
-];
-
+// ─── CLOUDS ANIMATION ───
 let cloudsInitted=false;
 
 function noOverlap(y,placed,ch,margin){
@@ -321,7 +357,7 @@ function initClouds(){
   const CW=Math.min(220,SKY_W-40), CH=95, MARGIN=18, SPEED_BASE=38;
 
   const placed=[];
-  const clouds=cloudTexts.map((c,i)=>{
+  const clouds=CLOUDS.map((c,i)=>{
     const el=document.createElement('div');
     el.className='cloud-bubble';
     el.innerHTML=`<p>${c.text}</p><span>${c.date}</span>`;
@@ -334,7 +370,7 @@ function initClouds(){
     placed.push({y});
     el.style.top=y+'px';
 
-    const startX=-CW-i*(SKY_W/cloudTexts.length+30);
+    const startX=-CW-i*(SKY_W/CLOUDS.length+30);
     const speed=SPEED_BASE+(i%3)*7;
     return {el,x:startX,y,speed,paused:false};
   });
