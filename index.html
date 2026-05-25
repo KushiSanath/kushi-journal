@@ -111,12 +111,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1
 .read-body p{margin-bottom:1.5rem}
 
 /* CLOUDS */
-.clouds-sky{position:relative;width:100%;height:clamp(420px,55vw,500px);background:var(--white);overflow:hidden;border-top:1px solid var(--n100);border-bottom:1px solid var(--n100)}
+.clouds-sky{position:relative;width:100%;height:clamp(520px,70vw,700px);background:var(--white);overflow:hidden;border-top:1px solid var(--n100);border-bottom:1px solid var(--n100)}
 .sky-hint{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--n200);font-weight:500;z-index:2;pointer-events:none}
-.cloud-bubble{position:absolute;background:var(--white);border:1.5px solid var(--n200);border-radius:999px;padding:0.85rem 1.4rem;width:220px;cursor:default;transition:border-color 0.2s;z-index:1;left:0;top:0}
+.cloud-bubble{position:absolute;background:var(--white);border:1.5px solid var(--n200);border-radius:18px;padding:1rem 1.3rem;max-width:260px;width:auto;cursor:default;transition:border-color 0.2s;z-index:1;left:0;top:0}
 .cloud-bubble:hover{border-color:var(--n400);z-index:3}
 .cloud-bubble.tapped{border-color:var(--n400);z-index:3}
-.cloud-bubble p{font-family:var(--serif);font-style:italic;font-size:0.88rem;color:var(--n800);line-height:1.55;letter-spacing:-0.01em;word-wrap:break-word}
+.cloud-bubble p{font-family:var(--serif);font-style:italic;font-size:0.82rem;color:var(--n800);line-height:1.55;letter-spacing:-0.01em;word-wrap:break-word}
 .cloud-bubble span{display:block;margin-top:0.45rem;font-size:0.65rem;color:var(--n300);letter-spacing:0.05em}
 
 /* LOOPS */
@@ -383,8 +383,8 @@ let cloudsInitted=false;
 // Set hint text based on device
 if(!isMobile) document.getElementById('sky-hint').textContent='hover to pause a thought';
 
-function noOverlap(y,placed,ch,margin){
-  for(let p of placed){if(Math.abs(y-p.y)<(ch+margin))return false;}
+function noOverlap(y,h,placed,margin){
+  for(let p of placed){if(Math.abs(y-p.y)<(Math.max(h,p.h||90)+margin))return false;}
   return true;
 }
 
@@ -392,27 +392,30 @@ function initClouds(){
   if(cloudsInitted)return;
   cloudsInitted=true;
   const sky=document.getElementById('clouds-sky');
-  const SKY_H=sky.offsetHeight||500;
+  const SKY_H=sky.offsetHeight||700;
   const SKY_W=sky.offsetWidth||680;
-  const CW=Math.min(220,SKY_W-40),CH=95,MARGIN=18,SPEED_BASE=38;
+  const CW=Math.min(260,SKY_W-40),MARGIN=22,SPEED_BASE=36;
 
   const placed=[];
   const clouds=CLOUDS.map((c,i)=>{
     const el=document.createElement('div');
     el.className='cloud-bubble';
     el.innerHTML=`<p>"${c.text}"</p><span>${c.date}</span>`;
-    el.style.width=CW+'px';
+    el.style.maxWidth=CW+'px';
     sky.appendChild(el);
 
+    // measure actual height after render
+    const CH=el.offsetHeight||90;
+
     let y,tries=0;
-    do{y=10+Math.random()*(SKY_H-CH-20);tries++;}
-    while(!noOverlap(y,placed,CH,MARGIN)&&tries<60);
-    placed.push({y});
+    do{y=10+Math.random()*(SKY_H-CH-30);tries++;}
+    while(!noOverlap(y,placed,CH,MARGIN)&&tries<80);
+    placed.push({y,h:CH});
     el.style.top=y+'px';
 
-    const startX=-CW-i*(SKY_W/CLOUDS.length+30);
-    const speed=SPEED_BASE+(i%3)*7;
-    return{el,x:startX,y,speed,paused:false};
+    const startX=-CW-i*(SKY_W/CLOUDS.length+40);
+    const speed=SPEED_BASE+(i%3)*6;
+    return{el,x:startX,y,h:CH,speed,paused:false};
   });
 
   // Desktop: hover to pause
@@ -467,10 +470,10 @@ function initClouds(){
       c.x+=c.speed*dt;
       if(c.x>SKY_W+20){
         c.x=-CW-20;
-        const others=clouds.filter((_,j)=>j!==i).map(o=>({y:o.y}));
+        const others=clouds.filter((_,j)=>j!==i).map(o=>({y:o.y,h:o.h}));
         let ny,tries=0;
-        do{ny=10+Math.random()*(SKY_H-CH-20);tries++;}
-        while(!noOverlap(ny,others,CH,MARGIN)&&tries<60);
+        do{ny=10+Math.random()*(SKY_H-c.h-30);tries++;}
+        while(!noOverlap(ny,c.h,others,MARGIN)&&tries<80);
         c.y=ny;c.el.style.top=ny+'px';
       }
       c.el.style.transform=`translateX(${Math.round(c.x)}px)`;
