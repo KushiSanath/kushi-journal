@@ -135,7 +135,7 @@ const CLOUDS = [
     date: "June 27, 2025"
   },
   {
-    text: "So as long as I’m here, you’ll always have someone rooting for you - just not in the front in row but somewhere in the crowd.",
+    text: "So as long as I'm here, you'll always have someone rooting for you - just not in the front in row but somewhere in the crowd.",
     date: "June 29, 2025"
   },
   {
@@ -151,11 +151,11 @@ const CLOUDS = [
     date: "June 25, 2025"
   },
   {
-    text: "All I can do now is believe that God shut this door to rescue me, to save me from further pain and to prevent my story from deviating too much from the one that’s written for me.",
+    text: "All I can do now is believe that God shut this door to rescue me, to save me from further pain and to prevent my story from deviating too much from the one that's written for me.",
     date: "July 25, 2025"
   },
   {
-    text: "Finally it all came down to mastering the art of acting like it didn’t hurt and that I don’t care.",
+    text: "Finally it all came down to mastering the art of acting like it didn’t hurt and that I don't care.",
     date: "July 25, 2025"
   },
   {
