@@ -40,7 +40,7 @@ const TIES = [
     date:    "May 25",
     mins:    "5",
     excerpt: "For once, I thought to myself how beautiful it is to have female friendships - the kind I had before a random Tuesday, before an honest conversation and before everything took a turn.",
-    body: `I grew up spending most of my time around male friendships, partially because I saw how toxic the female friendships around me were but also mostly because I went to a male dominant school.
+    body: `I grew up spending most of my time around male friendships, partly because I saw how toxic the female friendships around me were, but also mostly because I went to a male-dominant school.
 
 But that changed at UCLA. During my first few weeks here, I met some amazing women. We instantly clicked and suddenly every day became a routine: constant calls, spontaneous plans, loud dinners, collective breakdowns and a whole lot of crazy adventures together.
 
