@@ -155,7 +155,7 @@ const CLOUDS = [
     date: "July 25, 2025"
   },
   {
-    text: "Finally it all came down to mastering the art of acting like it didn’t hurt and that I don't care.",
+    text: "Finally it all came down to mastering the art of acting like it didn't hurt and that I don't care.",
     date: "July 25, 2025"
   },
   {
