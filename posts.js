@@ -68,32 +68,6 @@ But everything truly does happen for a reason - if that friendship lasted, the v
 
 I'm glad that version didn't make it, I like this one a lot better.`
   },
-  {
-    title:   "People who leave without saying why",
-    date:    "Apr 28",
-    mins:    "7",
-    excerpt: "Some exits are clean. Others are a slow disappearance, messages getting shorter, calls never returned. You learn to read the space between responses.",
-    body: `Some exits are clean. Others are a slow disappearance, messages getting shorter, calls never returned. You learn to read the space between responses.
-
-I've been left before, but never like that. The kind where you don't even get a door shutting. Just silence where sound used to be.
-
-You start checking your phone differently. Not hoping, exactly, but scanning. Looking for proof that you didn't imagine the whole thing. That the warmth was real and not just something you projected onto someone who was already halfway out.
-
-The worst part isn't the leaving. It's the not knowing why. Because without a reason, you fill in the blank yourself, and you never write anything kind.`
-  },
-  {
-    title:   "On being someone's favourite person",
-    date:    "Apr 10",
-    mins:    "4",
-    excerpt: "There's a weight to it. Being held in that much warmth. It changes how carefully you move.",
-    body: `There's a weight to it. Being held in that much warmth. It changes how carefully you move.
-
-When someone chooses you as their person, their first call, their safe place, you start carrying something invisible. Not a burden exactly. More like an awareness. That your words land harder. That your silence means more. That you can break something without meaning to.
-
-I used to think being loved was the easy part. But being someone's favourite is different. It asks you to show up, every time, even when you're tired. Especially when you're tired.
-
-It's a beautiful kind of heavy.`
-  },
 ];
 
 
