@@ -81,7 +81,7 @@ Being friends with her comes easy, simple and drama free: no performance, no sco
 
 She's the kind of friend that I never need to explain myself to, my silent thoughts are always just magically understood. She feels my anger before I realise it, would go to war over things that I'm still processing. She kept me from being someone's easy target, she's corrected me when I've tried to give more than I had to give. She's been protecting me even before I knew I needed it, and even in rooms I was never a part of. And looking back, without her, I would have kept walking through the wrong doors.
 
-Her loyalty has a spine, the kind of loyalty that stands for what is real, not what was easy and comfortable. From day one, she's been treating me in a way that she's made sure I never forgot my worth.
+Her loyalty has a spine, the kind of loyalty that stands for what is real, not what is easy and comfortable. From the first day, she's been treating me in a way that she's made sure I never forgot my worth.
 
 I never once have had to wonder before sharing something. What I told, always stayed with her. She saw the ugly quarters and stayed anyway. She just silently becomes the calm during my spirals.
 
