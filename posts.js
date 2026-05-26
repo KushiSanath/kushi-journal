@@ -79,7 +79,7 @@ I met her before I myself knew what I was looking for and somewhere along the wa
 
 Being friends with her comes easy, simple and drama free: no performance, no scorekeeping. No fine print, just honest conversations, and a whole lot of honesty and loyalty. The kind that is never sugarcoated, never feels like an attack. It feels like protection.
 
-She's the kind of friend that I never need to explain myself to, my silent thoughts are always just magically understood. She feels my anger before I realise it, would go to war over things that I'm still processing. She kept me from being someone's easy target, she's corrected me when I've tried to give more than I had to give. She's been protecting me even before I knew I needed it, and even in rooms I was never a part of. And looking back, without her, I would have kept walking into the wrong rooms.
+She's the kind of friend that I never need to explain myself to, my silent thoughts are always just magically understood. She feels my anger before I realise it, would go to war over things that I'm still processing. She kept me from being someone's easy target, she's corrected me when I've tried to give more than I had to give. She's been protecting me even before I knew I needed it, and even in rooms I was never a part of. And looking back, without her, I would have kept walking through the wrong doors.
 
 Her loyalty has a spine, the kind of loyalty that stands for what is real, not what was easy and comfortable. From day one, she's been treating me in a way that she's made sure I never forgot my worth.
 
