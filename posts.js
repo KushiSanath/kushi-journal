@@ -73,7 +73,7 @@ I'm glad that version didn't make it, I like this one a lot better.`
     date:    "May 25",
     mins:    "5",
     excerpt: "I don't want to know the version of college I would've had without her in it. I like this one a lot more. ",
-    body: `Accidentally bumped into her on the first day at UCLA correcting someone on how to pronounce her name right. Since that day, she just became someone constant through college.
+    body: `Accidentally bumped into her on the first day at UCLA, correcting someone on how to pronounce her name right. Little did I know, she'd be my constant through college.
 
 I met her before I myself knew what I was looking for and somewhere along the way, she became the reason I made it, the safest place I had.
 
