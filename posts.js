@@ -68,6 +68,33 @@ But everything truly does happen for a reason - if that friendship lasted, the v
 
 I'm glad that version didn't make it, I like this one a lot better.`
   },
+  {
+    title:   "All It Takes Is One",
+    date:    "May 25",
+    mins:    "5",
+    excerpt: "I don't want to know the version of college I would've had without her in it. I like this one a lot more. ",
+    body: `Accidentally bumped into her on the first day at UCLA correcting someone on how to pronounce her name right. Since that day, she just became someone constant through college.
+
+I met her before I myself knew what I was looking for and somewhere along the way, she became the reason I made it, the safest place I had.
+
+Being friends with her comes easy, simple and drama free: no performance, no scorekeeping. No fine print, just honest conversations, and a whole lot of honesty and loyalty. The kind that is never sugarcoated, never feels like an attack. It feels like protection.
+
+She's the kind of friend that I never need to explain myself to, my silent thoughts are always just magically understood. She feels my anger before I realise it, would go to war over things that I'm still processing. She kept me from being someone's easy target, she's corrected me when I've tried to give more than I had to give. She's been protecting me even before I knew I needed it, and even in rooms I was never a part of. And looking back, without her, I would have kept walking into the wrong rooms.
+
+Her loyalty has a spine, the kind of loyalty that stands for what is real, not what was easy and comfortable. From day one, she's been treating me in a way that she's made sure I never forgot my worth.
+
+I never once have had to wonder before sharing something. What I told, always stayed with her. She saw the ugly quarters and stayed anyway. She just silently becomes the calm during my spirals.
+
+One dinner and everything resets. One conversation, one hour I spend with her is all it takes to make sense of the world again, to unravel all the weeks of noise, and find some peace within.
+
+She's that person that made growth look like the most natural thing. Being around her raises something in you. Crazy how inspiring people never know they are. She set a standard for me just by being her true self. Being around her has made me want to be better, more honest, and more hardworking. She's the kind that does the right thing even when no one is watching, would never say aloud her values, would just simply embrace them.
+
+First call, first text. I can't process anything until I've told her. A memory to me is good if it has her in it. Now that I'm graduating, I've realised I didn't just survive college - I loved it, because of her.
+
+I don't want to know the version of college I would've had without her in it. I like this one a lot more.
+
+So if no one ever told you, one good friend is all it takes.`
+  },
 ];
 
 
