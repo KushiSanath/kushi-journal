@@ -85,7 +85,7 @@ Her loyalty has a spine, the kind of loyalty that stands for what is real, not w
 
 I never once have had to wonder before sharing something. What I told, always stayed with her. She saw the ugly quarters and stayed anyway. She just silently becomes the calm during my spirals.
 
-One dinner and everything resets. One conversation, one hour I spend with her is all it takes to make sense of the world again, to unravel all the weeks of noise, and find some peace within.
+One dinner and everything resets. One conversation, one hour I spend with her is all it takes to make sense of the world again, to unravel weeks of noise, and to find some peace within.
 
 She's that person that made growth look like the most natural thing. Being around her raises something in you. Crazy how inspiring people never know they are. She set a standard for me just by being her true self. Being around her has made me want to be better, more honest, and more hardworking. She's the kind that does the right thing even when no one is watching, would never say aloud her values, would just simply embrace them.
 
